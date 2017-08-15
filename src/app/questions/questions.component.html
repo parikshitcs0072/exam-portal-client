@@ -1,0 +1,9 @@
+﻿<div class="col-md-6 col-md-offset-3">
+    <div>
+        <h1>{{question.questionText}}</h1>
+        <input type="file" #uploadFile multiple="true"/>
+        <button (click)="uploadAnswer(uploadFile.files)">submit</button>
+    </div>
+<button (click)="nextQuestion()">Next</button>
+<button (click)="prevQuestion()">Prev</button>
+</div>
